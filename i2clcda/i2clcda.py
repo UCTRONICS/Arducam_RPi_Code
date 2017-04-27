@@ -83,13 +83,13 @@ def main():
 
     # Send some test
     lcd_string("Created by         <",LCD_LINE_1)
-    lcd_string("Osoyoo.com        <",LCD_LINE_2)
+    lcd_string("Lee        <",LCD_LINE_2)
 
     time.sleep(3)
   
     # Send some more text
     lcd_string("> Tutorial Url:",LCD_LINE_1)
-    lcd_string("> http://osoyoo.com",LCD_LINE_2)
+    lcd_string("> http://uctronics.com",LCD_LINE_2)
 
     time.sleep(3)
 
