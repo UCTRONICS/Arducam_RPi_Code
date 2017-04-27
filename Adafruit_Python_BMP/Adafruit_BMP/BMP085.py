@@ -1,5 +1,5 @@
 # Copyright (c) 2014 Adafruit Industries
-# Author: Lee
+# Author: Tony DiCola
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -55,7 +55,7 @@ BMP085_READPRESSURECMD   = 0x34
 
 class BMP085(object):
     def __init__(self, mode=BMP085_STANDARD, address=BMP085_I2CADDR, i2c=None, **kwargs):
-        self._logger = logging.getLogger('Arducam_BMP.BMP085')
+        self._logger = logging.getLogger('Adafruit_BMP.BMP085')
         # Check that mode is valid.
         if mode not in [BMP085_ULTRALOWPOWER, BMP085_STANDARD, BMP085_HIGHRES, BMP085_ULTRAHIGHRES]:
             raise ValueError('Unexpected mode value {0}.  Set mode to one of BMP085_ULTRALOWPOWER, BMP085_STANDARD, BMP085_HIGHRES, or BMP085_ULTRAHIGHRES'.format(mode))
